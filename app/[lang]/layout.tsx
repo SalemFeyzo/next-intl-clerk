@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
 import { Inter } from "next/font/google";
-// import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Header from "./components/Header";
 
@@ -24,13 +24,13 @@ export default function RootLayout({
   params: { lang: Locale };
 }>) {
   return (
-    // <ClerkProvider>
-    <html lang={params.lang}>
-      <body className={inter.className}>
-        <Header lang={params.lang} />
-        <main>{children}</main>
-      </body>
-    </html>
-    // </ClerkProvider>
+    <ClerkProvider>
+      <html lang={params.lang}>
+        <body className={inter.className}>
+          <Header lang={params.lang} />
+          <main>{children}</main>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

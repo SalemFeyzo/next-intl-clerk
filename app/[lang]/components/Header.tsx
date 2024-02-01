@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignInButton } from "@clerk/nextjs";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionaries";
 import LocaleSwitcher from "./LocaleSwitcher";
@@ -15,6 +16,9 @@ export default async function Header({ lang }: { lang: Locale }) {
           </li>
           <li>
             <Link href={`/${lang}/about`}>{navigation.about}</Link>
+          </li>
+          <li>
+            <SignInButton />
           </li>
         </ul>
         <LocaleSwitcher />
