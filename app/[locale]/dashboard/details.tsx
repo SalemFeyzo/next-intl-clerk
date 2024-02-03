@@ -4,13 +4,6 @@ import { useOrganization, useSession, useUser } from "@clerk/nextjs";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import "./prism.css";
-
-declare global {
-  interface Window {
-    Prism: any;
-  }
-}
 
 export function UserDetails() {
   const { isLoaded, user } = useUser();
@@ -84,9 +77,12 @@ export function UserDetails() {
                 <div className="px-8 py-2">
                   <dt className="text-sm font-semibold mb-1">Profile Image</dt>
                   <dd className="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
-                    <img
+                    <Image
                       src={user.imageUrl}
                       className="rounded-full w-12 h-12"
+                      alt="user"
+                      width={50}
+                      height={50}
                     />
                   </dd>
                 </div>
@@ -336,13 +332,6 @@ function CopyButton(props: { text: string }) {
 }
 
 function JSONOutput(props: { json: any }) {
-  useEffect(() => {
-    if (window.Prism) {
-      console.log(`highlighting`);
-      window.Prism.highlightAll();
-    }
-  }, []);
-
   return (
     <pre className="px-8 sm:px-6 text-black text-sm">
       <code className="language-json">

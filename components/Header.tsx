@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n";
 import { OrganizationSwitcher, SignedIn, UserButton } from "@clerk/nextjs";
 
 export default async function Header() {
@@ -7,6 +7,7 @@ export default async function Header() {
       <Link href="/" className="flex items-center h-20 gap-2 sm:gap-4">
         Hello
       </Link>
+      <Link href="/sign-in">Sign In</Link>
       <div className="grow" />
       <SignedIn>
         <div className="hidden sm:block">
