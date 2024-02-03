@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/localizations": "^1.26.13",
     "@clerk/nextjs": "^4.29.5",
     "@formatjs/intl-localematcher": "^0.5.4",
     "negotiator": "^0.6.3",
@@ -23,6 +24,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "classnames": "^2.5.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
