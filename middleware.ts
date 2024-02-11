@@ -1,12 +1,19 @@
 import { authMiddleware } from "@clerk/nextjs";
 import createMiddleware from "next-intl/middleware";
-import { locales, localePrefix } from "@/i18n";
+import {
+  locales,
+  localePrefix,
+  defaultLocale,
+  localeDetection,
+  pathnames,
+} from "@/navigation";
 
 const intlMiddleware = createMiddleware({
   locales,
   localePrefix,
-  defaultLocale: "en",
-  localeDetection: true,
+  defaultLocale,
+  localeDetection,
+  pathnames,
 });
 
 export default authMiddleware({

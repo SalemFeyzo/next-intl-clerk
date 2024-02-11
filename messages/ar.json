@@ -1,5 +1,11 @@
 {
   "Index": {
     "title": "المصادقة تبدأ من هنا."
+  },
+  "About": {
+    "title": "حولنا"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "العربية {locale, select, ar {العربية} en {الانجليزية} other {غير معروفة}}"
   }
 }

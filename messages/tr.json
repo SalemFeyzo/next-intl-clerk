@@ -3,7 +3,7 @@
     "title": "Auth starts here."
   },
   "About": {
-    "title": "About Us"
+    "title": "Hakkımızda"
   },
   "LocaleSwitcher": {
     "switchLocale": "Switch to {locale, select, ar {ِِِArabic} en {English} other {Unknown}}"
