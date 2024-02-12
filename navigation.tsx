@@ -19,8 +19,8 @@ export const pathnames = {
   "/sign-up": "/sign-up",
   "/about": {
     en: "/about",
-    ar: "/about",
-    tr: "/Hakkinda",
+    ar: `/${encodeURIComponent("حول")}`,
+    tr: `/${encodeURIComponent("hakkında")}`,
   },
 } satisfies Pathnames<typeof locales>;
 
