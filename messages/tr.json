@@ -1,4 +1,13 @@
 {
+  "Navigation": {
+    "home": "Ana sayfa",
+    "about": "Hakkında",
+    "sign-in": "Giriş Yap",
+    "dashboard": "Kontrol Paneli"
+  },
+  "NotFound": {
+    "title": "404 Bulunamadı"
+  },
   "Index": {
     "title": "Auth starts here."
   },

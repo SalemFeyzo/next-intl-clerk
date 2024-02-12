@@ -1,4 +1,17 @@
 {
+  "LocaleLayout": {
+    "title": "next-intl example",
+    "description": "This is an example of using next-intl in the `app` directory."
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "sign-in": "Sign In",
+    "dashboard": "Dashboard"
+  },
+  "NotFound": {
+    "title": "404 Not Found"
+  },
   "Index": {
     "title": "Auth starts here."
   },
@@ -7,5 +20,8 @@
   },
   "LocaleSwitcher": {
     "switchLocale": "Switch to {locale, select, ar {ِِِArabic} en {English} other {Unknown}}"
+  },
+  "OpenGraph": {
+    "title": "next-intl example"
   }
 }
