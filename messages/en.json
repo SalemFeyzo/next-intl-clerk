@@ -3,6 +3,11 @@
     "title": "next-intl example",
     "description": "This is an example of using next-intl in the `app` directory."
   },
+  "ModeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
   "Navigation": {
     "home": "Home",
     "about": "About",

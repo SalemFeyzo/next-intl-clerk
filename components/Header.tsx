@@ -7,6 +7,7 @@ import {
 } from "@clerk/nextjs";
 import Navigation from "./Navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { ModeToggle } from "./ModeToggle";
 
 export default async function Header() {
   return (
@@ -17,6 +18,7 @@ export default async function Header() {
       <Navigation />
       <LocaleSwitcher />
       <div className="grow" />
+      <ModeToggle />
       <SignedIn>
         <div className="hidden sm:block">
           <OrganizationSwitcher afterCreateOrganizationUrl="/dashboard" />

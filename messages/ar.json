@@ -1,4 +1,9 @@
 {
+  "ModeToggle": {
+    "light": "وضع الضوء",
+    "dark": "الوضع الداكن",
+    "system": "وضع النظام"
+  },
   "Navigation": {
     "home": "الرئيسية",
     "about": "حول",

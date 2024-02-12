@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { arSA, enUS, trTR } from "@clerk/localizations";
-import { NextIntlClientProvider, useMessages } from "next-intl";
 import {
   getFormatter,
   getNow,
@@ -11,6 +10,8 @@ import {
 
 import Header from "@/components/Header";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 type Props = {
   children: React.ReactNode;
@@ -42,16 +43,28 @@ export default function RootLayout({
   children,
   params: { locale },
 }: Readonly<Props>) {
+  const messages = useMessages();
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body>
-        <ClerkProvider
-          localization={locale === "ar" ? arSA : locale === "tr" ? trTR : enUS}
-        >
-          <Header />
-          <main>{children}</main>
-        </ClerkProvider>
-      </body>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <ClerkProvider
+              localization={
+                locale === "ar" ? arSA : locale === "tr" ? trTR : enUS
+              }
+            >
+              <Header />
+              <main>{children}</main>
+            </ClerkProvider>
+          </ThemeProvider>
+        </body>
+      </NextIntlClientProvider>
     </html>
   );
 }
