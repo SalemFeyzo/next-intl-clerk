@@ -16,8 +16,8 @@ export default async function Header() {
         LOGO
       </Link>
       <Navigation />
-      <LocaleSwitcher />
       <div className="grow" />
+      <LocaleSwitcher />
       <ModeToggle />
       <SignedIn>
         <div className="hidden sm:block">
