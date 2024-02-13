@@ -1,7 +1,7 @@
 {
   "LocaleLayout": {
-    "title": "next-intl example",
-    "description": "This is an example of using next-intl in the `app` directory."
+    "title": "next-intl & Clerk example",
+    "description": "This is an example of using next-intl & Clerk."
   },
   "ModeToggle": {
     "light": "Light",
@@ -14,19 +14,19 @@
     "sign-in": "Sign In",
     "dashboard": "Dashboard"
   },
-  "NotFound": {
-    "title": "404 Not Found"
-  },
   "Index": {
-    "title": "Auth starts here."
+    "title": "Home page"
   },
   "About": {
     "title": "About Us"
   },
-  "LocaleSwitcher": {
-    "switchLocale": "Switch to {locale, select, ar {ِِِArabic} en {English} other {Unknown}}"
+  "Dashboard": {
+    "title": "Dashboard"
+  },
+  "NotFound": {
+    "title": "Page not found (404)"
   },
   "OpenGraph": {
-    "title": "next-intl example"
+    "title": "next-intl & Clerk example"
   }
 }

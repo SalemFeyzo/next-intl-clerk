@@ -1,10 +1,5 @@
 import { Link } from "@/navigation";
-import {
-  OrganizationSwitcher,
-  SignedIn,
-  UserButton,
-  auth,
-} from "@clerk/nextjs";
+import { OrganizationSwitcher, SignedIn, UserButton } from "@clerk/nextjs";
 import Navigation from "./Navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { ModeToggle } from "./ModeToggle";
