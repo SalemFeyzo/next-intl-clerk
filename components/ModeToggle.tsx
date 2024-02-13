@@ -17,7 +17,7 @@ import {
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
   const locale = useLocale();
-  const t = useTranslations("ModeToggle");
+  const t = useTranslations("default.ModeToggle");
 
   return (
     <DropdownMenu dir={locale === "ar" ? "rtl" : "ltr"}>

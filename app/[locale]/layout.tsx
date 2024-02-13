@@ -20,7 +20,10 @@ type Props = {
 export async function generateMetadata({
   params: { locale },
 }: Omit<Props, "children">): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "LocaleLayout" });
+  const t = await getTranslations({
+    locale,
+    namespace: "default.LocaleLayout",
+  });
   const formatter = await getFormatter({ locale });
   const now = await getNow({ locale });
   const timeZone = await getTimeZone({ locale });

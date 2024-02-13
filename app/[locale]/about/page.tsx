@@ -1,14 +1,13 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata() {
-  const t = await getTranslations("About");
+  const t = await getTranslations("default.About");
   return {
     title: t("title"),
   };
 }
 
-export default function Home() {
-  const t = useTranslations("About");
+export default async function Home() {
+  const t = await getTranslations("default.About");
   return <h1>{t("title")}</h1>;
 }

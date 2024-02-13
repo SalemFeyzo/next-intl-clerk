@@ -8,5 +8,6 @@ declare namespace NodeJS {
     NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL: string;
     NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL: string;
     NEXT_PUBLIC_LOCALE_PREFIX: string;
+    I18NEXUS_API_KEY: string;
   }
 }

@@ -3,7 +3,7 @@ import NavigationLink from "./NavigationLink";
 import { auth } from "@clerk/nextjs";
 
 export default function Navigation() {
-  const t = useTranslations("Navigation");
+  const t = useTranslations("default.Navigation");
   const { userId } = auth();
 
   return (
