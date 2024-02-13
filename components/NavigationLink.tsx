@@ -15,7 +15,8 @@ export default function NavigationLink<
     <Link
       aria-current={isActive ? "page" : undefined}
       href={href}
-      style={{ textDecoration: isActive ? "underline" : "none" }}
+      // style={{ textDecoration: isActive ? "underline" : "none" }}
+      className={`p-3 ${isActive ? "font-bold" : ""}`}
       {...rest}
     />
   );
