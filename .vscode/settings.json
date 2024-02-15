@@ -24,5 +24,10 @@
     "لوحة",
     "معروفة",
     "موجودة"
-  ]
+  ],
+  "peacock.affectPanelBorder": false,
+  "peacock.affectSashHover": false,
+  "peacock.affectSideBarBorder": false,
+  "peacock.affectStatusAndTitleBorders": false,
+  "peacock.color": ""
 }
