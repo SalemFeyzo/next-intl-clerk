@@ -6,6 +6,7 @@ import {
   getTranslations,
 } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import NextTopLoader from "nextjs-toploader";
 
 import Header from "@/components/Header";
 import "./globals.css";
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body>
+          <NextTopLoader showSpinner={false} color="hsl(24.6 95% 53.1%)" />
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
